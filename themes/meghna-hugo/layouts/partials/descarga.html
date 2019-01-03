@@ -1,0 +1,24 @@
+{{ if .Site.Params.descarga.enable}}
+{{"<!-- Start Descarga -->" | safeHTML}}
+<section id="descarga" class="call-to-action section-sm bg-1 overly" style='background-image: url("{{ .Site.Params.counter.bgImage | absURL }}")'>
+    <div class="container">
+        <div class="row">
+            {{"<!-- section title -->" | safeHTML}}
+            <div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+                {{ with .Site.Params.descarga.title}} <h2>{{ . }}</h2> {{ end }}
+                <div class="border"></div>
+            </div>
+
+            {{ range .Site.Data.descarga.disco}}
+            {{"<!-- team member -->" | safeHTML}}
+            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="1500ms">
+             {{"<!-- member photo -->" | safeHTML}}
+              <a href="{{ .url }}"><img class="img-responsive" src="{{ .image | absURL }}" alt="{{ .name }}"></a>
+            </div>
+            {{"<!-- end team member -->" | safeHTML}}
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{"<!-- Start Services Section -->" | safeHTML}}
+{{ end }}

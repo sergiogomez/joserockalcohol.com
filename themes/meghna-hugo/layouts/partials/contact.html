@@ -1,0 +1,40 @@
+{{ if .Site.Data.contact.enable }}
+{{"<!-- Srart Contact Us -->" | safeHTML}}
+<section id="contratacion" class="contact-us section-bg">
+    <div class="container">
+        <div class="row">
+
+            {{"<!-- section title -->" | safeHTML}}
+            <div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+                <h2>{{ with .Site.Data.contact.heading }} {{ . }} {{ end }} <span class="color">{{ with .Site.Data.contact.headingSpan }} {{ . }} {{ end }}</span></h2>
+                <div class="border"></div>
+            </div>
+            {{"<!-- /section title -->" | safeHTML}}
+
+            {{"<!-- Contact Details -->" | safeHTML}}
+            <div class="contact-info col-md-6 wow fadeInUp" data-wow-duration="500ms">
+                {{ with .Site.Data.contact.title }}<h3>{{ . }}</h3> {{ end }}
+                {{ with .Site.Data.contact.content }} <p> {{ . }} </p> {{ end }}
+                <div class="contact-details">
+                    {{ range .Site.Data.contact.contactDetails }}
+                    <div class="con-info clearfix">
+                        <i class="{{ .icon }}"></i>
+                        <span>{{ .info }}</span>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{ if .Site.Data.contact.enable_maps }}
+    {{"<!-- Google Map -->" | safeHTML}}
+    <div class="google-map">
+        <div id="map-canvas" {{ with .Site.Data.contact.mapLatitude }} data-latitude="{{ . }}" {{ end }} 
+        {{ with .Site.Data.contact.mapLongitude }} data-longitude="{{ . }}" {{ end }}></div>
+    </div>
+    {{ end }}
+
+</section>
+{{"<!-- /contact -->" | safeHTML}}
+{{ end }}

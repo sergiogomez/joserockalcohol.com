@@ -1,0 +1,12 @@
+enable : true
+title : Descarga Directa y Gratis
+disco :
+  - image : images/discos/letrazepam.jpg
+    name : Letrazepam
+    url : "http://descargas.joserockalcohol.com/descargar/letrazepam"
+  - image : images/discos/por-algo-sera.jpg
+    name : Por algo será...
+    url : "http://descargas.joserockalcohol.com/descargar/por-algo-sera"
+  - image : images/discos/cuando-las-palabras.jpg
+    name : Cuando las palabras querían decir cosas
+    url : "http://descargas.joserockalcohol.com/descargar/cuando-las-palabras"

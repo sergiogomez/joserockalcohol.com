@@ -1,0 +1,68 @@
+baseURL = "https://joserockalcohol.netlify.com/"
+languageCode = "es-es"
+title = "Jose Rockalcohol"
+theme = "meghna-hugo"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-19895739-1"
+
+# Menu
+[menu]
+    [[menu.nav]]
+    name = "Descarga"
+    URL = "descarga"
+    weight = 2
+
+    [[menu.nav]]
+    name = "Play"
+    URL = "play"
+    weight = 3
+
+    [[menu.nav]]
+    name = "Contratación"
+    URL = "contratacion"
+    weight = 4
+
+# Site params
+[params]
+home= "Jose Rockalcohol"
+logo = "images/logo-web.png"
+
+    # Banner Section
+    [params.banner]
+    enable = true
+    bgImage = "images/jose-rockalcohol.jpg"
+    heading = "Jose Rockalcohol"
+    content= "Cuesta encontrar el punto intermedio entre la realidad de los días y la ambición de los sueños"
+    btn = true
+    btnText = "Descarga Directa y Gratis"
+    btnURL = "#descarga"
+
+    # Descarga
+    [params.descarga]
+    enable = true
+    title = "Descarga Directa y Gratis"
+    
+    # counter
+    [params.counter]
+    enable = false
+    bgImage = "images/backgrounds/bg-1.jpg"
+
+    # footer
+    [params.footer]
+        copyright = "Sergio Gómez"
+        copyrightURL = "https://sergio-gomez.com"
+
+        # social Icons
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-facebook"
+        url = "https://www.facebook.com/joserockalcohol/"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-twitter"
+        url = "https://twitter.com/joserockalcohol"
+        
+        [[params.footer.socialIcon]]
+        icon = "tf-ion-social-youtube"
+        url = "https://www.youtube.com/channel/UCE3xuy30WtVy66PEWV6PBGw"
+        
