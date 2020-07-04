@@ -16,11 +16,11 @@
 				{{"<!-- copyright -->" | safeHTML}}
 				<div class="copyright text-center">
 					<a href="{{ .Site.BaseURL | absURL }}">
-						<img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" /> 
+						<img src="{{ .Site.Params.logo | absURL }}" alt="Meghna" />
 					</a>
 					<br>
 
-					<p>Realizado por <a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a></p>
+					<p><a href="{{ .Site.Params.footer.copyrightURL | absURL }}"> {{ with .Site.Params.footer.copyright }} {{ . }} {{ end }} </a></p>
 				</div>
 			</div>
 		</div>
@@ -29,7 +29,7 @@
 {{"<!-- /footer -->" | safeHTML}}
 
 {{"<!-- Essential Scripts -->" | safeHTML}}
-		
+
 {{"<!-- Main jQuery -->" | safeHTML}}
 <script type="text/javascript" src="{{ "plugins/jquery/dist/jquery.min.js" | absURL}}"></script>
 {{"<!-- Bootstrap 3.1 -->" | safeHTML}}

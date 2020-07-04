@@ -11,7 +11,7 @@
 
             {{ range .Site.Data.descarga.disco}}
             {{"<!-- team member -->" | safeHTML}}
-            <div class="col-md-4 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="1500ms">
+            <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInDown" data-wow-duration="{{ .wowDuration }}ms">
              {{"<!-- member photo -->" | safeHTML}}
               <a href="{{ .url }}"><img class="img-responsive" src="{{ .image | absURL }}" alt="{{ .name }}"></a>
             </div>
